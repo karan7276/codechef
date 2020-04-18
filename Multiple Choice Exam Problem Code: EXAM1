@@ -1,0 +1,36 @@
+//Solutiton
+
+#include <stdio.h>
+
+int main(void) {
+    int t;
+    scanf("%d",&t);
+    for(int i=0;i<t;i++)
+    {
+        int n;
+        scanf("%d",&n);
+        char str[n],ans[n];
+        scanf("%s",str);
+        scanf("%s",ans);
+        int count=0;
+        for(int j=0;str[j]!='\0';j++)
+        {
+            if(str[j]==ans[j])
+            {
+                count++;
+            }
+            else
+            {
+                if(ans[j]!='N')
+                {
+                    j+=1;
+                }
+            }
+        }
+        printf("%d\n",count);
+        count=0;
+    }
+	// your code goes here
+	return 0;
+}
+
