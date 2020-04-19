@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+#include<string.h>
+#define ll long long int
+#define REPEAT int t;cin>>t;while(t--)
+using namespace std;
+int main()
+{
+    REPEAT{
+        ll n,i,c,p,k;
+        cin>>n;
+        ll a[n];
+        for(i=0;i<n;i++)
+        {
+            cin>>a[i];
+        }
+        cout<<*min_element(a,a+n)<<endl;
+        
+        
+    }
+    
+    
+    
+}
