@@ -8,7 +8,7 @@ int main()
     REPEAT{
         ll n,i,c,p,k;
         cin>>c>>p>>k;
-        ll ans=c+p/k;
+        ll ans=((c+p)/k);
         if(ans%2==0){
             cout<<"Chef"<<endl;
         }else{
