@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+#include<string.h>
+#define ll long long int
+#define REPEAT int t;cin>>t;while(t--)
+#define j 1000000007
+using namespace std;
+int main()
+{
+   REPEAT{
+      long long int a,b,n;
+	    scanf("%lld %lld %lld",&a,&b,&n);
+	  //  a=pow(a,n);
+	  //  b=pow(b,n);
+	    if(n%2 == 0){
+	        
+	    if(abs(a)>abs(b)){
+	        printf("1\n");
+	    }else if(abs(a)<abs(b)){
+	        printf("2\n");
+	    }else if(abs(a)==abs(b)){
+	        printf("0\n");
+	    }
+	}
+	else{
+	    if(a>b){
+	        printf("1\n");
+	    }
+	    else if(a==b){
+	        printf("0\n");
+	    }
+	    else{
+	        printf("2\n");
+	    }
+	}
+   }
+   }
