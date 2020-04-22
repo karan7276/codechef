@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+#include<string.h>
+#define ll long long int
+#define REPEAT int t;cin>>t;while(t--)
+using namespace std;
+int main()
+{
+    REPEAT{
+    ll i,n,k,diff=0,sum,c=0;
+    cin>>n>>k;
+    ll a[n];
+   
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+     a[-1]=0;
+    for(i=0;i<n;i++)
+    {
+        sum=a[i]-a[i-1];
+        if(sum>k){
+            sum%k==0?diff+=(sum/k)-1:diff+=(sum/k);
+        }
+    }
+   cout<<diff<<endl;
+    }
+}
