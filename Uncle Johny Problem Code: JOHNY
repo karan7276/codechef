@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+#include<string.h>
+#define ll unsigned long long int
+#define REPEAT int t;cin>>t;while(t--)
+#define BOOSTER ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define INT_BITS 16
+using namespace std;
+int main(){
+   BOOSTER
+   REPEAT{
+       ll n,i,k;
+       cin>>n;
+       ll a[n];
+       for(i=1;i<=n;i++)cin>>a[i];//1 3 4 2   //2 //1 2 3 4  
+       cin>>k;
+       
+       ll ans=a[k];
+       sort(a+1,a+n+1);
+       for(i=1;i<=n;i++)
+       {
+         if(a[i]==ans){
+             cout<<i;
+             break;
+         }
+       }
+       cout<<endl;
+      
+   }
+}
