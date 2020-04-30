@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+#include<string>
+#include<iostream>
+#include<algorithm>
+#include<climits>
+#include<stack>
+#include<bitset>
+#define ll long long int
+#define BOOSTER std::ios_base::sync_with_stdio(NULL);cin.tie(0);cout.tie(0);
+#define REPEAT int t;cin>>t;while(t--)
+using namespace std;
+int main()
+{
+    BOOSTER
+    REPEAT{
+        ll n,k,ansq,ansr;
+        cin>>n>>k;
+         if(k==0){
+            cout<<0<<" "<<n<<endl;
+        }
+        else{
+        ansq=n/k;
+        ansr=n%k;
+        cout<<ansq<<" "<<ansr<<endl;
+        }
+    }
+}
